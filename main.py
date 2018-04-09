@@ -6,13 +6,12 @@ import os
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
-# THIS CREATES ROUTE TO DISPLAY THE FORM
 
 @app.route('/signup')
 def display_user_signup_form():
     return render_template('main.html')
 
-# THESE ARE FUNCTIONS FOR THE VALIDATIONS
+
 
 def empty_val(x):
     if x:
